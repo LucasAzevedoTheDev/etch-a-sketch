@@ -5,3 +5,5 @@ This project is a browser version of an **Etch-A-Sketch** built from scratch. Th
 - DOM manipulation
 - CSS flexbox
 - GIT and GITHUB best practices
+
+Under development...
