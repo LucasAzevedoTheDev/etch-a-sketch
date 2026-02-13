@@ -1,10 +1,18 @@
 let container = document.querySelector(".container");
-let squareDiv = "";
 
-// CREATING THE SQUARES
-for(i = 0; i < 257; i++) {
-  squareDiv = document.createElement("div");
+
+for(i = 0; i < 256; i++) {
+  let squareDiv = document.createElement("div");
   squareDiv.setAttribute("class", "square");
-
+  
+  // HOVER EFFECT
+  squareDiv.addEventListener("mouseenter", () => {
+  squareDiv.style.backgroundColor = "black"; 
+  });
+  squareDiv.addEventListener("mouseleave", () => {
+  squareDiv.style.backgroundColor = "white"; 
+  });
+  
   container.appendChild(squareDiv);
 }
+
