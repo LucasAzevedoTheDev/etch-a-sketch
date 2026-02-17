@@ -9,6 +9,21 @@ function createGrid(size) {
     row.classList.add("gridRow");
   
 
-    
+    for (let y = 0; y < size; y++) {
+      let square = document.createElement("div");
+      square.classList.add("square");
+
+      square.addEventListener("mouseenter", () => {
+        square.style.backgroundColor = "black";
+      });
+      square.addEventListener("mouseleave", () => {
+        square.style.backgroundColor = "grey";
+      });
+
+      row.appendChild(square);
+    }
+
+    container.appendChild(row);
+  }
 }
 
