@@ -30,7 +30,7 @@ function createGrid(size) {
 inputButton.onclick = () => {
   let input = prompt("Please write a number between 1 and 100", "");
 
-  if (input < 100) {
+  if (input < 100 || input == 100) {
     createGrid(input);
   }
   else {
