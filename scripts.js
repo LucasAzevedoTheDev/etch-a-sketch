@@ -27,3 +27,15 @@ function createGrid(size) {
   }
 }
 
+inputButton.onclick = () => {
+  let input = prompt("Please write a number between 1 and 100", "");
+
+  if (input < 100) {
+    createGrid(input);
+  }
+  else {
+    alert("Please choose a number between 1 and 100");
+  }
+}
+
+createGrid(16);
